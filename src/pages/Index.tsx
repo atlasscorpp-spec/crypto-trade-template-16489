@@ -42,8 +42,8 @@ const Index = () => {
           </span>
         </motion.div>
         
-        <div className="max-w-4xl relative z-10">
-          <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
+        <div className="relative z-10">
+          <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left max-w-4xl">
             <span className="text-gray-200">
               <TextGenerateEffect words="Scale your marketing" />
             </span>
