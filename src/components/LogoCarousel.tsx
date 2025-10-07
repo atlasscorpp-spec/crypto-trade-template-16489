@@ -1,26 +1,20 @@
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Linkedin, Twitter, BarChart3, Mail, ShoppingBag, Database, MessageSquare, Zap } from "lucide-react";
 
 const LogoCarousel = () => {
-  const integrations = [
-    { icon: Facebook, name: "Facebook" },
-    { icon: Instagram, name: "Instagram" },
-    { icon: Linkedin, name: "LinkedIn" },
-    { icon: Twitter, name: "Twitter/X" },
-    { icon: BarChart3, name: "Google Analytics" },
-    { icon: Mail, name: "Mailchimp" },
-    { icon: Database, name: "Salesforce" },
-    { icon: ShoppingBag, name: "Shopify" },
-    { icon: MessageSquare, name: "Slack" },
-    { icon: Zap, name: "Zapier" },
+  const logos = [
+    "/lovable-uploads/5830bd79-3511-41dc-af6c-8db32d91fc2c.png",
+    "/lovable-uploads/bb50362c-6879-4868-bbc9-c6e051fd8d7d.png",
+    "/lovable-uploads/1e2a48dc-059b-4919-a1ed-44685d771a32.png",
+    "/lovable-uploads/bf56a0c6-48e4-49f7-b286-8e3fda9a3385.png",
+    "/lovable-uploads/7cc724d4-3e14-4e7c-9e7a-8d613fde54d0.png",
   ];
 
-  const extendedIntegrations = [...integrations, ...integrations, ...integrations];
+  const extendedLogos = [...logos, ...logos, ...logos];
 
   return (
     <div className="w-full overflow-hidden bg-background/50 backdrop-blur-sm py-12 mt-20">
       <div className="container px-4 mb-6">
-        <p className="text-center text-sm text-muted-foreground">Integrates seamlessly with your favorite platforms</p>
+        <p className="text-center text-sm text-muted-foreground">Trusted by leading marketing teams worldwide</p>
       </div>
       <motion.div 
         className="flex space-x-16"
@@ -32,7 +26,7 @@ const LogoCarousel = () => {
         transition={{
           opacity: { duration: 0.5 },
           x: {
-            duration: 20,
+            duration: 15,
             repeat: Infinity,
             ease: "linear",
             delay: 0.5
@@ -44,24 +38,20 @@ const LogoCarousel = () => {
           gap: "4rem"
         }}
       >
-        {extendedIntegrations.map((integration, index) => {
-          const Icon = integration.icon;
-          return (
-            <motion.div
-              key={`integration-${index}`}
-              className="flex items-center gap-2 text-muted-foreground"
-              initial={{ opacity: 0.5 }}
-              whileHover={{ 
-                opacity: 1,
-                scale: 1.05,
-                transition: { duration: 0.2 }
-              }}
-            >
-              <Icon className="w-6 h-6" />
-              <span className="text-sm font-medium whitespace-nowrap">{integration.name}</span>
-            </motion.div>
-          );
-        })}
+        {extendedLogos.map((logo, index) => (
+          <motion.img
+            key={`logo-${index}`}
+            src={logo}
+            alt={`Partner logo ${index + 1}`}
+            className="h-8 object-contain"
+            initial={{ opacity: 0.5 }}
+            whileHover={{ 
+              opacity: 1,
+              scale: 1.05,
+              transition: { duration: 0.2 }
+            }}
+          />
+        ))}
       </motion.div>
     </div>
   );
