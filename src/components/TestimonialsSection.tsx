@@ -7,39 +7,39 @@ import { Card } from "./ui/card";
 const testimonials = [
   {
     name: "Michael Chen",
-    role: "Professional Trader",
+    role: "Marketing Director",
     image: "https://avatars.githubusercontent.com/u/1234567?v=4",
-    content: "The real-time market data and advanced trading features have significantly improved my trading performance. The platform's security measures give me peace of mind."
+    content: "MarketHub transformed how we manage campaigns. The social media planner with approval workflows is exactly what we needed. Our team's productivity increased by 40%."
   },
   {
     name: "Sarah Johnson",
-    role: "Crypto Fund Manager",
+    role: "Agency Owner",
     image: "https://avatars.githubusercontent.com/u/2345678?v=4",
-    content: "CryptoTrade's institutional-grade tools have transformed our trading strategy. The API integration and automated features have saved us countless hours."
+    content: "Having CRM, invoicing, and analytics in one platform has been a game-changer. We've reduced our tool stack from 8 to 1 and saved thousands in monthly subscriptions."
   },
   {
     name: "David Wilson",
-    role: "Early Crypto Investor",
+    role: "Freelance Consultant",
     image: "https://avatars.githubusercontent.com/u/3456789?v=4",
-    content: "The customer support is exceptional, and the platform's intuitive design made getting started with crypto trading seamless. A game-changer for both beginners and pros."
+    content: "The invoice management alone is worth the price. Automated billing and client tracking have helped me get paid 50% faster. Plus, the analytics are incredibly insightful."
   },
   {
     name: "Emily Zhang",
-    role: "DeFi Developer",
+    role: "Social Media Manager",
     image: "https://avatars.githubusercontent.com/u/4567890?v=4",
-    content: "We've seen remarkable improvements in our trading efficiency since switching to CryptoTrade. The smart order routing and liquidity aggregation are particularly impressive."
+    content: "The social media planning feature rivals Metricool. The team review system ensures quality content every time. It's become essential for managing our 20+ client accounts."
   },
   {
     name: "James Rodriguez",
-    role: "Crypto Security Expert",
+    role: "Startup Founder",
     image: "https://avatars.githubusercontent.com/u/5678901?v=4",
-    content: "The security features are robust and the regular updates keep us ahead of emerging threats. It's exactly what the crypto industry needed."
+    content: "We run our entire marketing operation on MarketHub. The collaborative workspaces keep our remote team aligned, and the business analytics help us make data-driven decisions."
   },
   {
     name: "Lisa Thompson",
-    role: "Portfolio Manager",
+    role: "E-commerce Manager",
     image: "https://avatars.githubusercontent.com/u/6789012?v=4",
-    content: "The platform's ability to handle complex trading strategies while maintaining simplicity in its interface is remarkable. It's been invaluable for our portfolio management."
+    content: "The platform integrations are seamless. We connected all our tools in minutes. The task management with team collaboration features has streamlined our entire workflow."
   }
 ];
 
@@ -54,9 +54,9 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-normal mb-4">Trusted by Traders</h2>
+          <h2 className="text-5xl font-normal mb-4">Loved by Marketing Teams</h2>
           <p className="text-muted-foreground text-lg">
-            Join thousands of satisfied traders on CryptoTrade
+            Join thousands of marketers streamlining their workflow
           </p>
         </motion.div>
 

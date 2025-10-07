@@ -38,7 +38,7 @@ const PricingTier = ({
         ))}
       </ul>
       <Button className="button-gradient w-full">
-        Start Trading
+        Get Started
       </Button>
     </div>
   </CardSpotlight>
@@ -55,7 +55,7 @@ export const PricingSection = () => {
           className="text-5xl md:text-6xl font-normal mb-6"
         >
           Choose Your{" "}
-          <span className="text-gradient font-medium">Trading Plan</span>
+          <span className="text-gradient font-medium">Marketing Plan</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -63,45 +63,49 @@ export const PricingSection = () => {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="text-lg text-gray-400"
         >
-          Select the perfect trading plan with advanced features and competitive fees
+          Scale your marketing with the perfect plan for your team
         </motion.p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <PricingTier
-          name="Basic Trader"
-          price="$0"
-          description="Perfect for beginners starting their crypto journey"
+          name="Starter"
+          price="$29"
+          description="Perfect for freelancers and small teams"
           features={[
-            "Basic spot trading",
-            "Market & limit orders",
-            "Basic market analysis",
+            "Basic CRM for up to 100 contacts",
+            "Invoice management",
+            "Social media planner (3 accounts)",
+            "Basic analytics dashboard",
             "Email support"
           ]}
         />
         <PricingTier
-          name="Pro Trader"
-          price="$29"
-          description="Advanced features for serious traders"
+          name="Professional"
+          price="$79"
+          description="Advanced features for growing teams"
           features={[
-            "Advanced trading tools",
-            "Margin trading up to 10x",
-            "Advanced technical analysis",
-            "Priority support",
-            "API access"
+            "Advanced CRM (unlimited contacts)",
+            "Automated invoicing & payments",
+            "Social media planner (10 accounts)",
+            "Team collaboration workspace",
+            "Business analytics & reporting",
+            "Task management",
+            "Priority support"
           ]}
           isPopular
         />
         <PricingTier
-          name="Institutional"
+          name="Enterprise"
           price="Custom"
-          description="Enterprise-grade solutions for institutions"
+          description="Custom solutions for large organizations"
           features={[
-            "Custom trading solutions",
-            "Unlimited trading volume",
-            "OTC desk access",
+            "Everything in Professional",
+            "Unlimited social media accounts",
+            "Custom integrations & API access",
+            "Advanced team permissions",
+            "White-label options",
             "Dedicated account manager",
-            "Custom API integration",
             "24/7 priority support"
           ]}
         />
