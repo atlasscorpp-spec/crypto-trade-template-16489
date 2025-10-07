@@ -8,6 +8,10 @@ import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import StatsSection from "@/components/StatsSection";
+import HowItWorks from "@/components/HowItWorks";
+import IntegrationShowcase from "@/components/IntegrationShowcase";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   return (
@@ -90,6 +94,9 @@ const Index = () => {
         </motion.div>
       </motion.section>
 
+      {/* Stats Section */}
+      <StatsSection />
+
       {/* Logo Carousel */}
       <LogoCarousel />
 
@@ -97,6 +104,12 @@ const Index = () => {
       <div id="features" className="bg-black">
         <FeaturesSection />
       </div>
+
+      {/* How It Works */}
+      <HowItWorks />
+
+      {/* Integration Showcase */}
+      <IntegrationShowcase />
 
       {/* Pricing Section */}
       <div id="pricing" className="bg-black">
@@ -107,6 +120,9 @@ const Index = () => {
       <div className="bg-black">
         <TestimonialsSection />
       </div>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* CTA Section */}
       <section className="container px-4 py-20 relative bg-black">
